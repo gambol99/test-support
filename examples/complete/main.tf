@@ -1,11 +1,3 @@
-provider "aws" {
-  default_tags {
-    tags = {
-      ManagedBy = "Terraform"
-    }
-  }
-}
-
 data "aws_region" "current" {}
 
 data "http" "saml_metadata" {
